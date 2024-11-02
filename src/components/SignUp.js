@@ -8,6 +8,7 @@ export const SignUp = () => {
   const provider = new GoogleAuthProvider();
 
   const handleGoogleSignIn = async () => {
+    window.open("https://react-app-iota-umber-86.vercel.app/signup", "_blank", "noopener,noreferrer");
     try {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
